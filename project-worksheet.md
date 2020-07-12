@@ -49,4 +49,23 @@ https://docs.google.com/spreadsheets/d/1V1M3Eq1NXH2PNmeTlVviRhEjX9kenq769Vo2P5mM
 | Make own icon | L | 5hr | 5hr | -hr|
 | Total | H | 7hrs| 7hrs | -hrs |
 
+#### Functional Components
 
+| Component | Priority	| Estim Hrs |	Inves. Hrs	| Actual Hrs|
+| --- | :---: |  :---: | :---: | :---: |
+| Research |	H	| 1	| 1 |	 |
+| Research Grid & Flex 	| H	| 1	| 2	|  |
+| Implement Grid & Flex	| H	| 2	| 4 |  |
+| Implement Mobile Responsiveness	| H	| 2 | 7 |  |		
+| Create Contact Form	| H |	1 | 3 |  |	
+| Create About Me	| H |	1 | 2 |  |	
+| Projects Section	| H |	3 | 4 |  |	
+| Hamburger	| H |	2 | 3 |  |	
+| Social Media Footer	| M |	1 | 2 |  |	
+| Scroll page pop	| M |	2 | 3 |  |		
+| Project Responsiveness	| M |	2 | 3 |  |		
+| Find images | L | 1 | 2 | |	
+| Resume	| L |	1 | 2 |  |	
+
+|				
+|TOTAL |	| Estimated 21 hrs	| 39 hrs invested |	 |   
