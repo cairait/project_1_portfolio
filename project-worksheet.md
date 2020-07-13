@@ -28,6 +28,7 @@ https://docs.google.com/spreadsheets/d/1V1M3Eq1NXH2PNmeTlVviRhEjX9kenq769Vo2P5mM
 
 #### Matrix 
 
+https://github.com/cairait/project_1_portfolio/blob/master/IMG_6594.jpg
 
 #### MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
