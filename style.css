@@ -1,5 +1,12 @@
-div {
+/* div {
     border: 5px solid red;
+}  */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+
 }
 
 ul {
@@ -8,19 +15,24 @@ ul {
     list-style-type: none;
     padding: 15px; 
     text-align: right;
-    color: white;
-    width: 100%;
+    max-width: 100%;
     font-family: 'Oswald', sans-serif;
     margin: 0; 
 }
 
 li{
     margin: auto;
+    font-size: 13px;
+    color: white;
+    text-transform: none;
+
+
 
 }
 
 .socials {
     text-align: right;
+    background-color: rgba(0, 0, 0, 0.3);
     
 }
 
@@ -35,8 +47,56 @@ li{
     padding-bottom: 11px;
 }
 
-.nav{
-    background-color: black;
-    opacity: 40%;
+.nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding-right: 15px;
+    font-size: 20px;
+    text-decoration: none;
+
+
+}
+
+.home {
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    color: white;
+    font-size: 20px;
+
+    
+    
+    
+
+
+}
+
+.topofpage {
+    background-image: url(https://st2.depositphotos.com/1875497/6422/i/950/depositphotos_64228311-stock-photo-vintage-flower-background.jpg);
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.introduction {
+    color: #77a8a8;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.skills {
+    text-align: center;
+    display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;  
+
+
+
 }
 
