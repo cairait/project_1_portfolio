@@ -1,11 +1,14 @@
-/* div {
+ /* div {
     border: 5px solid red;
-}  */
+}   */
 
 body {
     margin: 0;
     padding: 0;
     overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 
 }
 
@@ -18,16 +21,19 @@ ul {
     max-width: 100%;
     font-family: 'Oswald', sans-serif;
     margin: 0; 
+    color: white;
+    text-transform: none;
 }
 
 li{
     margin: auto;
     font-size: 13px;
+    
+}
+
+li > a{
     color: white;
-    text-transform: none;
-
-
-
+    text-decoration: none;
 }
 
 .socials {
@@ -72,31 +78,126 @@ li{
 }
 
 .topofpage {
-    background-image: url(https://st2.depositphotos.com/1875497/6422/i/950/depositphotos_64228311-stock-photo-vintage-flower-background.jpg);
-    height: 300px;
+    background-color: #77a8a8;
+    height: 220px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 .introduction {
-    color: #77a8a8;
+    color: white;
     width: 100%;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 0px; 
+    background-color: #d9ecd0;
+    margin: 0;
 
 }
 
+
+
+
 .skills {
+    color: white;
+    background-color: #b9b0b0;
+    margin: 0;
     text-align: center;
-    display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(5, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;  
+    padding: 0px;
+
+}
+
+.skills img{
+    width: 150px;
+    margin: 15px;
+    
+    
+
+}
+
+.skills h1{
+    text-align: center;
+    background-color: ;
+}
 
 
 
+.about-me {
+    text-align: center;
+    color: white;
+    background-color: #e4d1d1;
+
+}
+
+
+
+.projects {
+    text-align: center;
+    background-color: #77a8a8;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact {
+    text-align: center;
+    background-color: #d9ecd0;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+
+}
+
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+
+}
+
+.form-control{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #b9b0b0;
+    color: #b9b0b0;
+    font-size: 18px;
+    margin-bottom: 16px;
+
+}
+
+input{
+    height: 45px;
+
+}
+
+form .submit{
+    background: white;
+    border-color: transparent;
+    color: #b9b0b0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form .submit:hover{
+    background-color: #b9b0b0;
+    cursor: pointer;
 }
 
