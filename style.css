@@ -141,11 +141,13 @@ img{
 
 
 
-.projects {
+.allprojects {
     text-align: center;
     background-color: #77a8a8;
     color: white;
-}
+    display: grid;
+    
+} 
 
 
 
