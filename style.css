@@ -7,7 +7,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column; 
-    width: 100%; 
+    max-width: 100%; 
     height: 100%; 
 
 }
@@ -27,6 +27,7 @@ ul {
     margin: 0; 
     color: white;
     text-transform: none;
+    
 }
 
 li{
@@ -62,7 +63,7 @@ li > a{
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
     padding-right: 15px;
-    font-size: 30px;
+    font-size: 40px;
     text-decoration: none;
 
 
@@ -90,8 +91,9 @@ li > a{
 
 .home > img{
     border-radius: 50%;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 20px 0 20px 0px;
+    width: 80%;
     
 }  
 
@@ -167,11 +169,28 @@ li > a{
     color: white;
     display: grid;
 
-
-
-
 } 
 
+#allprojects > h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.project-list > img {
+    width: 70%;
+    border-radius: 15%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.project-list > h2 {
+    margin: 5px;
+    font-size: 40px;
+}
+.project-list > p {
+    margin: 5px;
+    font-size: 30px;
+}
 
 
 
@@ -186,26 +205,32 @@ li > a{
 
 
 
-#contact {
+
+ #contact {
     text-align: center;
     background-color: #d9ecd0;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+    width: 100%;
 
-}
+} 
 
 #contact > h2 {
     margin: 0;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+
 }
 
-form{
+/* #contactform{
     margin-top: 50px;
     transition: all 4s ease-in-out;
 
-}
+} */
 
-.form-control{
+ input.form-control, textarea.form-control {
     width: 600px;
     background: transparent;
     border: none;
@@ -214,15 +239,17 @@ form{
     color: #b9b0b0;
     font-size: 18px;
     margin-bottom: 16px;
+    width: 100%;
 
-}
+} 
 
 input{
     height: 45px;
+    width: 100%;
 
 }
 
-form .submit{
+button {
     background: white;
     border-color: transparent;
     color: #b9b0b0;
@@ -233,6 +260,12 @@ form .submit{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.contactform > .googleforms {
+    display: none;
+}
+
+
 
 form .submit:hover{
     background-color: #b9b0b0;
@@ -253,6 +286,9 @@ form .submit:hover{
     border-radius: 50%;
 
 }
+
+
   
  
+/* Media Queriesss */
 

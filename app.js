@@ -26,7 +26,7 @@ fetch(url)
         console.log('app is running!')
         console.log(data)
         const createProjectElement = (project) => {
-           const $div = $('<div>')
+           const $div = $('<div>').attr('class', 'project-list')
             $div.append($('<h2>').attr('class', 'project-header').text(project.title))
             $div.append($('<p>').text(project.description))
             $div.append($('<img>').attr('src', project.image))
