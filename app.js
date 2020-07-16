@@ -35,9 +35,33 @@ fetch(url)
         }
         data.forEach( project => {
             const $projectDiv = createProjectElement(project)
-            $(".allprojects").append($projectDiv)
+            $("#allprojects").append($projectDiv)
         })
     }
+
+
+    $(document).ready(function() {
+      $('.nav').click(function(e) {
+        
+        
+        
+        e.preventDefault();
+      });
+    });
+
+    $(document).ready(function() {
+      $('.nav').click(function(e) {
+        
+        var targetHref = $(this).attr('href');
+        
+      $('html, body').animate({
+        scrollTop: $(targetHref).offset().top
+      }, 1000);
+        
+        e.preventDefault();
+      });
+    });
+
 
 
 

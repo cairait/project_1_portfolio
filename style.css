@@ -6,9 +6,9 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+    flex-direction: column; 
+    width: 100%; 
+    height: 100%; 
 
 }
 
@@ -58,7 +58,7 @@ li > a{
     padding-bottom: 11px;
 }
 
-.nav {
+#nav {
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
     padding-right: 15px;
@@ -78,29 +78,34 @@ li > a{
     
 }
 
+.home > h1 {
+    margin: 10px 0px 10px 0px;
+}
+
 .home > h2{
-    margin: 0px;
-    color: black;
+    margin: 10px 0px 10px 0px;
+    color: white;
 
 }
 
-img{
-    height: 150px;
-    width: 150px;
+.home > img{
+    border-radius: 50%;
     overflow: hidden;
-}
+    margin: 20px 0 20px 0px;
+    
+}  
 
 .topofpage {
     background-color: #77a8a8;
-    height: 220px;
+
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
-.introduction {
-    color: white;
+#introduction {
+    color: rgba(0, 0, 0, 0.3);
     width: 100%;
     text-align: center;
     padding-top: 0px; 
@@ -109,14 +114,18 @@ img{
 
 }
 
-.introduction > h1 {
-    margin: 0;
+#introduction > h1 {
+    margin: 20px 0px 0px 0px;
+}
+
+#introduction > h2 {
+    margin-bottom: 0;
 }
 
 
 
 
-.skills {
+#skills {
     color: white;
     background-color: #b9b0b0;
     margin: 0;
@@ -125,15 +134,26 @@ img{
 
 }
 
-.skills img{
-    width: 150px;
+#skills i{
+    /* width: 150px;
     margin: 15px;
+    border-radius: 25%; */
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 25px;
+    height: 25px;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50%;
+
     
     
 
 }
 
-.skills h1{
+#skills h1{
     text-align: center;
     margin: 0;
 
@@ -141,12 +161,15 @@ img{
 
 
 
-.allprojects {
+#allprojects {
     text-align: center;
-    background-color: #77a8a8;
+    background-color: #b9b0b0;
     color: white;
     display: grid;
-    
+
+
+
+
 } 
 
 
@@ -163,7 +186,7 @@ img{
 
 
 
-.contact {
+#contact {
     text-align: center;
     background-color: #d9ecd0;
     margin: 0;
@@ -172,7 +195,7 @@ img{
 
 }
 
-.contact > h2 {
+#contact > h2 {
     margin: 0;
 }
 
@@ -215,4 +238,21 @@ form .submit:hover{
     background-color: #b9b0b0;
     cursor: pointer;
 }
+
+  
+  /* Facebook */
+  .fa-linkedin, .fa-github  {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 25px;
+    height: 25px;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+  
+ 
 
