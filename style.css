@@ -1,6 +1,6 @@
- div {
+ /* div {
     border: 5px solid red;
-}    
+}     */
 
 body {
     margin: 0;
@@ -162,37 +162,33 @@ li > a{
 
 
 
-
-
-.projectstitle {
-    font-size: 50px;
-    text-transform: uppercase;
+#allprojects {
     text-align: center;
     background-color: #b9b0b0;
     color: white;
-}
+    display: grid;
 
-div.project-list {
-    width: 25%;
+} 
+
+#allprojects > h1 {
+    font-size: 50px;
+    text-transform: uppercase;
 }
 
 .project-list > img {
     width: 70%;
     border-radius: 15%;
-     margin-bottom: 20px;
-    margin-top: 30px; 
-    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .project-list > h2 {
     margin: 5px;
     font-size: 40px;
-    text-align: center;
 }
 .project-list > p {
     margin: 5px;
     font-size: 30px;
-    text-align: center;
 }
 
 
@@ -358,17 +354,50 @@ form .submit:hover{
 
     .skills i {
         
-    }
-
-    .project-list > img {
-        width: 75%;
 
     }
 
     #allprojects {
+        text-align: center;
+        background-color: #b9b0b0;
+        color: white;
         display: flex;
         flex-direction: row;
+    
+    }
 
+        .project-list > img {
+            width: 70%;
+            border-radius: 15%;
+            margin-bottom: 20px;
+            margin-top: 30px;
+             margin-bottom: 20px;
+            margin-top: 30px; 
+            text-align: center;
+        }
+        
+        .project-list > h2 {
+            margin: 5px;
+            font-size: 40px;
+            text-align: center;
+        }
+        .project-list > p {
+            margin: 5px;
+            font-size: 30px;
+            text-align: center;
+        }
+    } 
+
+    .projectstitle {
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #b9b0b0;
+        color: white;
+    }
+
+    div.project-list {
+        width: 25%;
         
     }
 
@@ -376,8 +405,7 @@ form .submit:hover{
         display: block;
         
     }
-    
-    #contact {
+    .contactform {
         display: hidden;
     }
 }
