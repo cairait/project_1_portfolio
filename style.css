@@ -1,6 +1,6 @@
- /* div {
+ div {
     border: 5px solid red;
-}    */
+}    
 
 body {
     margin: 0;
@@ -12,7 +12,9 @@ body {
 
 }
 
-
+.name {
+    
+}
 
 
 
@@ -89,7 +91,7 @@ li > a{
 
 }
 
-.home > img{
+.mypicture > img{
     border-radius: 50%;
     /* overflow: hidden; */
     margin: 20px 0 20px 0px;
@@ -110,9 +112,9 @@ li > a{
     color: rgba(0, 0, 0, 0.3);
     width: 100%;
     text-align: center;
-    padding-top: 0px; 
+    padding: 0px;
     background-color: #d9ecd0;
-    margin: 0;
+    margin: 0px;
 
 }
 
@@ -137,9 +139,6 @@ li > a{
 }
 
 #skills i{
-    /* width: 150px;
-    margin: 15px;
-    border-radius: 25%; */
     background: rgba(0, 0, 0, 0.3);
     color: white;
     width: 25px;
@@ -148,7 +147,7 @@ li > a{
     text-decoration: none;
     padding: 20px;
     text-align: center;
-    border-radius: 50%;
+    border-radius: 50%; 
 
     
     
@@ -163,33 +162,37 @@ li > a{
 
 
 
-#allprojects {
+
+
+.projectstitle {
+    font-size: 50px;
+    text-transform: uppercase;
     text-align: center;
     background-color: #b9b0b0;
     color: white;
-    display: grid;
+}
 
-} 
-
-#allprojects > h1 {
-    font-size: 50px;
-    text-transform: uppercase;
+div.project-list {
+    width: 25%;
 }
 
 .project-list > img {
     width: 70%;
     border-radius: 15%;
-    margin-bottom: 20px;
-    margin-top: 30px;
+     margin-bottom: 20px;
+    margin-top: 30px; 
+    text-align: center;
 }
 
 .project-list > h2 {
     margin: 5px;
     font-size: 40px;
+    text-align: center;
 }
 .project-list > p {
     margin: 5px;
     font-size: 30px;
+    text-align: center;
 }
 
 
@@ -261,10 +264,9 @@ button {
     margin-bottom: 20px;
 }
 
-.contactform > .googleforms {
+.googleform {
     display: none;
 }
-
 
 
 form .submit:hover{
@@ -273,7 +275,7 @@ form .submit:hover{
 }
 
   
-  /* Facebook */
+
   .fa-linkedin, .fa-github  {
     background: rgba(0, 0, 0, 0.3);
     color: white;
@@ -291,4 +293,91 @@ form .submit:hover{
   
  
 /* Media Queriesss */
+@media screen and (min-width: 980px) {
+    .home {
+        display: grid;
+    }
+    .name {
+        grid-column: 1;
+         position: relative; 
+        justify-content: space-between;  
+        align-items: center;  
+    }
 
+    .name {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        top: 200px;
+    } 
+
+    .name > h2 {
+        margin: 0;
+    }
+
+    .mypicture {
+        grid-column: 2;
+    }
+    
+    .home > h1 {
+        font-size: 70px;
+    }
+
+    .topofpage > h2 {
+        display: hidden;
+    }
+
+    .home > img {
+        width: 20%;
+    }
+
+    #introduction > h2 {
+        padding: 15px 30px 30px 30px;
+        font-size: 40px;
+
+    }
+
+    #introduction > h1 {
+        padding: 20px;
+        font-size: 50px;
+    }
+
+    .secondgrid {
+        display: grid;
+    }
+
+    .introduction {
+        display: grid;
+        grid-column: 1;
+    }
+
+    .skills {
+        display:grid;
+        grid-column: 2;
+    }
+
+    .skills i {
+        
+    }
+
+    .project-list > img {
+        width: 75%;
+
+    }
+
+    #allprojects {
+        display: flex;
+        flex-direction: row;
+
+        
+    }
+
+    .googleform {
+        display: block;
+        
+    }
+    
+    #contact {
+        display: hidden;
+    }
+}
