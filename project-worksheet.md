@@ -34,13 +34,13 @@ https://github.com/cairait/project_1_portfolio/blob/master/IMG_6594.jpg
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 
-| Project Previews | H | 4hr | 5hr | 6hr|
-| Regular Nav | H | 1hr | 2hr | 2hr|
+| Project Previews | H | 4hr | 5hr | 6hr |
+| Regular Nav | H | 1hr | 2hr | 2hr |
 | Adding Form | H | 2.5hr| 3hr | 3hr |
-| Other sections and flex| M | 7hr | 9hr | 9hr|
+| Other sections and flex| M | 7hr | 9hr | 9hr |
 | Working with API | H | 4hrs| 5hr | 4hr |
-| Responsive | H | 5hr | 6hr | 5hr|
-| Social Media Icons | L | 2hr | 3hr | 1hr|
+| Responsive | H | 5hr | 6hr | 5hr |
+| Social Media Icons | L | 2hr | 3hr | 1hr |
 | Total | H | 28hrs| -hrs | 30hrs |
 
 #### PostMVP
