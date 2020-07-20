@@ -6,8 +6,8 @@ fetch(url)
   .then(response => response.json())
   // take that data and perform following things (lines 10-20ish) on it
   .then(data => {
-      console.log(data)
-    console.log(data.feed.entry)
+   //   console.log(data)
+   // console.log(data.feed.entry)
     //tidying up the json formatted data that comes back
     const projects = data.feed.entry.map(entry => {
           // you spit that data out as tidier array of objects
@@ -23,8 +23,8 @@ fetch(url)
     })
     // function that generates HTML elements for each of the rows on your google sheet
   const app = (data) => {
-        console.log('app is running!')
-        console.log(data)
+  //      console.log('app is running!')
+  //      console.log(data)
         const createProjectElement = (project) => {
            const $div = $('<div>').attr('class', 'project-list')
             $div.append($('<h2>').attr('class', 'project-header').text(project.title))
@@ -174,7 +174,7 @@ fetch(url)
       }
       
       function loaded() {
-        console.log("Contact form submission handler loaded successfully.");
+        //console.log("Contact form submission handler loaded successfully.");
         // bind to the submit event of our form
         var forms = document.querySelectorAll("form.gform");
         for (var i = 0; i < forms.length; i++) {
