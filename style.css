@@ -266,10 +266,7 @@ button {
     margin-bottom: 20px;
 }
 
-/* .googleform {
-    display: none;
-    border: 5px solid red;
-} */
+
 
 
 form .submit:hover{
@@ -293,6 +290,59 @@ form .submit:hover{
 }
 
 
+
+
+
+
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #77a8a8;
+    color: white;
+  }
+ 
+  div#nav {
+      display: none;
+  }
+
   
  
 /* -----------------------Media Queriesss------------------ */
@@ -312,6 +362,10 @@ form .submit:hover{
 
     ul{ 
         padding: 30px;
+    }
+
+    .topnav {
+        display: none;
     }
 
     .name {
