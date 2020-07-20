@@ -78,7 +78,7 @@
 </div>
 
 <div id= "contact">
-    <h2>lets keep in touch</h2>
+    <!-- <h2>lets keep in touch</h2>
 
     <div class="contactform">
     <input name="name" type="text" class="form-control" placeholder="Your Name" required>
@@ -87,9 +87,56 @@
     <br>
     <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea>
     <br>
-    <button>SUBMIT</button>
-   
-    </div>
+    <button>SUBMIT</button> -->
+
+    <h2 class="content-head">Lets keep in touch!</h2>
+
+
+    <!-- START HERE -->
+    
+    
+       
+      <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+      action="https://script.google.com/macros/s/AKfycbyixxUZd6yhL0Agb8_dWqe9uXDMCDMoMdzAS2l5_fjYCOSM7Nqe/exec">
+        <!-- change the form action to your script url -->
+    
+        <div class="form-elements">
+          <fieldset class="pure-group">
+            <label for="name">Name: </label>
+            <input id="name" name="name" placeholder="NAME" />
+          </fieldset>
+    
+          <fieldset class="pure-group">
+            <label for="message">Message: </label>
+            <input id="message" name="message" rows="4"
+            placeholder="FEEDBACK, RESUME REQUEST, OR LETS WORK TOGETHER!"></input>
+          </fieldset>
+    
+          <fieldset class="pure-group">
+            <label for="email"><em>Your</em> Email Address:</label>
+            <input id="email" name="email" type="email" value=""
+            required placeholder="YOURNAME@EMAIL.COM"/>
+            <span class="email-invalid" style="display:none">
+              Must be a valid email address</span>
+          </fieldset>
+    
+    
+          <button >
+            Send</button>
+        </div>
+    
+        <!-- Customise the Thankyou Message People See when they submit the form: -->
+        <div class="thankyou_message" style="display:none;">
+          <h2><em>Thanks</em> for contacting me!
+            We will get back to you soon!</h2>
+        </div>
+    
+      </form>
+    
+      <!-- Submit the Form to Google Using "AJAX" -->
+      <script data-cfasync="false" type="text/javascript"
+      src="form-submission-handler.js"></script>
+    <!-- END -->
 
     <!-- <div class = "googleform">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4MO2RhG9zYverTg82gFn7u9SZOv8MxJMr7x0waUDWTLzlTA/viewform?embedded=true" width="640" height="904" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
