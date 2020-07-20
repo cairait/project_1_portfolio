@@ -368,6 +368,10 @@ form .submit:hover{
         display: none;
     }
 
+    div#nav {
+        display: block;
+    }
+
     .name {
         grid-column: 1;
          position: relative; 
