@@ -1,7 +1,7 @@
   /* div {
     border: 5px solid red;
 }       */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 body {
     /* margin: 0; */
@@ -11,7 +11,7 @@ body {
     max-width: 100%;  
     height: 100%; 
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
 
 }
 
@@ -56,7 +56,7 @@ li > a{
 
 .socials {
     text-align: right;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     
 }
 
@@ -72,7 +72,7 @@ li > a{
 }
 
 #nav {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
     padding-right: 15px;
     font-size: 40px;
@@ -91,7 +91,7 @@ li > a{
     
 }
 
-.home > h1 {
+/* .home > h1 {
     margin: 10px 0px 10px 0px;
 }
 
@@ -99,41 +99,57 @@ li > a{
     margin: 10px 0px 10px 0px;
     color: white;
 
+} */
+
+.name > h1 {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    margin: 0px;
+}
+
+.name > h2 {
+    
+    font-size: 40px;
+    
 }
 
 .mypicture > img{
     border-radius: 50%;
-    /* overflow: hidden; */
     margin: 20px 0 20px 0px;
     width: 80%;
     
 }  
 
 .topofpage {
-    background-color: #77a8a8;
-
+    background-image: url("https://cdn.abcotvs.com/dip/images/6186471_051520-wtvd-4pm-no-sunflowers-at-dix-park-img.jpg?w=1600");
     width: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
+    position: absolute;
 
 }
 
 #introduction {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.2);
     width: 100%;
     text-align: center;
     padding: 0px;
-    background-color: #d9ecd0;
+    background-color: white;
     margin: 0px;
 
 }
 
-#introduction > h1 {
+h1.intro {
     margin: 20px 0px 0px 0px;
+    font-weight: bold;
+    color: #FBA914;
+
 }
 
 #introduction > h2 {
     margin-bottom: 0;
+    font-size: 10px;
+    color: #DF6D26;
 }
 
 
@@ -141,7 +157,7 @@ li > a{
 
 #skills {
     color: white;
-    background-color: #b9b0b0;
+    background-color: #FBB22D;
     margin: 0;
     text-align: center;
     padding: 0px;
@@ -149,7 +165,7 @@ li > a{
 }
 
 #skills i{
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.2);
     color: white;
     width: 25px;
     height: 25px;
@@ -170,19 +186,32 @@ li > a{
 
 }
 
+.projects {
+    background-color: white;
+    text-align: center;
 
+
+}
 
 #allprojects {
     text-align: center;
-    background-color: #b9b0b0; 
-    color: white;
-    display: grid;
-    display: inline-block; 
+    background-color: white; 
+    position: relative;
+    /* display: grid;
+    display: inline-block;  */
     /* display: flex;
     flex-direction: column; */
     
 
 } 
+
+h2.project-header {
+    color: #DF6D26;
+}
+
+p {
+    color: #FBB22D
+}
 
 #allprojects > h1 {
     font-size: 50px;
@@ -206,15 +235,27 @@ li > a{
     font-size: 30px;
 }
 
+.project-list > a {
+    color: #DF6D26;
+    font-size: 30px;
+}
 
-.projectstitle {
+
+h1.projectstitle {
     width: 100%;
+    background-image: url("https://cdn.abcotvs.com/dip/images/6186471_051520-wtvd-4pm-no-sunflowers-at-dix-park-img.jpg?w=1600");
+    
+}
 
+.resume {
+    text-align: center;
+    color: #FBB22D;
+    
 }
 
  #contact {
     text-align: center;
-    background-color: #d9ecd0;
+    background-color: #DF6D26;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
@@ -226,7 +267,7 @@ li > a{
     margin: 0;
     width: 100%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
 
 }
 
@@ -433,7 +474,7 @@ form .submit:hover{
     #skills > h1 {
         font-size: 100px;
         margin: 0px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.2);
     }
 
     
@@ -447,8 +488,8 @@ form .submit:hover{
 
     #allprojects {
         text-align: center;
-        background-color: #b9b0b0;
-        color: white;
+        background-color: white;
+        color: black;
         display: flex;
     
     }
