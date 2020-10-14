@@ -483,11 +483,21 @@ div.socials {
 .project-card > a {
     background-color: #FBB22D;
     color: white;
-    padding: 1em 1.5em;
     margin-top: 10px;
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.project-card > a {
+    font-family: "Source Sans Pro",Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 23px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600; 
+    display: block;
+      
+}  
 
 a.button4{
     display:inline-block;
@@ -799,7 +809,8 @@ div.socials {
     border-radius: 23px;
     padding: 10px;
     text-decoration: none;
-    font-weight: 600;    
-} 
+    font-weight: 600;
+    display: inline;  
+}  
 
 }
