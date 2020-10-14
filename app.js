@@ -1,71 +1,71 @@
-console.log()
-const url = 'https://spreadsheets.google.com/feeds/list/1Z86cW-TqdqZK3v4tCn-q-lDeAIlSBadQpbfwSADg4cI/od6/public/values?alt=json'
-//takes our url and get json data from it
-fetch(url)
-    // make sure our response is converted to a json format
-  .then(response => response.json())
-  // take that data and perform following things (lines 10-20ish) on it
-  .then(data => {
-   //   console.log(data)
-   // console.log(data.feed.entry)
-    //tidying up the json formatted data that comes back
-    const projects = data.feed.entry.map(entry => {
-          // you spit that data out as tidier array of objects
-            return {
-                title: entry.gsx$title.$t,
-                image: entry.gsx$image.$t,
-                description: entry.gsx$description.$t,
-                code: entry.gsx$code.$t,
-                WebsiteURL: entry.gsx$websiteurl.$t,
-            }
-    })
-    //you use the tidied up projects array and pass it into the app function (aka html generator)
-    app(projects);
-    })
-    // function that generates HTML elements for each of the rows on your google sheet
-  const app = (data) => {
-  //      console.log('app is running!')
-  //      console.log(data)
-        const createProjectElement = (project) => {
-           const $div = $('<div>').attr('class', 'project-list')
-            $div.append($('<h2>').attr('class', 'project-header').text(project.title))
-            $div.append($('<p>').text(project.description))
-            $div.append($('<img>').attr('src', project.image))
-            // $div.append($('<a>').attr('href', project.Code).text("Code "))
+// console.log()
+// const url = 'https://spreadsheets.google.com/feeds/list/1Z86cW-TqdqZK3v4tCn-q-lDeAIlSBadQpbfwSADg4cI/od6/public/values?alt=json'
+// //takes our url and get json data from it
+// fetch(url)
+//     // make sure our response is converted to a json format
+//   .then(response => response.json())
+//   // take that data and perform following things (lines 10-20ish) on it
+//   .then(data => {
+//    //   console.log(data)
+//    // console.log(data.feed.entry)
+//     //tidying up the json formatted data that comes back
+//     const projects = data.feed.entry.map(entry => {
+//           // you spit that data out as tidier array of objects
+//             return {
+//                 title: entry.gsx$title.$t,
+//                 image: entry.gsx$image.$t,
+//                 description: entry.gsx$description.$t,
+//                 code: entry.gsx$code.$t,
+//                 WebsiteURL: entry.gsx$websiteurl.$t,
+//             }
+//     })
+//     //you use the tidied up projects array and pass it into the app function (aka html generator)
+//     app(projects);
+//     })
+//     // function that generates HTML elements for each of the rows on your google sheet
+//   const app = (data) => {
+//   //      console.log('app is running!')
+//   //      console.log(data)
+//         const createProjectElement = (project) => {
+//            const $div = $('<div>').attr('class', 'project-list')
+//             $div.append($('<h2>').attr('class', 'project-header').text(project.title))
+//             $div.append($('<p>').text(project.description))
+//             $div.append($('<img>').attr('src', project.image))
+//             // $div.append($('<a>').attr('href', project.Code).text("Code "))
 
-            $div.append($('<a>').attr('href', project.WebsiteURL).text("Website"))
-
-
-            return $div
-        }
-        data.forEach( project => {
-            const $projectDiv = createProjectElement(project)
-            $("#allprojects").append($projectDiv)
-        })
-    }
+//             $div.append($('<a>').attr('href', project.WebsiteURL).text("Website"))
 
 
-    $(document).ready(function() {
-      $('.nav').click(function(e) {
+//             return $div
+//         }
+//         data.forEach( project => {
+//             const $projectDiv = createProjectElement(project)
+//             $("#allprojects").append($projectDiv)
+//         })
+//     }
+
+
+//     $(document).ready(function() {
+//       $('.nav').click(function(e) {
         
         
         
-        e.preventDefault();
-      });
-    });
+//         e.preventDefault();
+//       });
+//     });
 
-    $(document).ready(function() {
-      $('.nav').click(function(e) {
+//     $(document).ready(function() {
+//       $('.nav').click(function(e) {
         
-        var targetHref = $(this).attr('href');
+//         var targetHref = $(this).attr('href');
         
-      $('html, body').animate({
-        scrollTop: $(targetHref).offset().top
-      }, 1000);
+//       $('html, body').animate({
+//         scrollTop: $(targetHref).offset().top
+//       }, 1000);
         
-        e.preventDefault();
-      });
-    });
+//         e.preventDefault();
+//       });
+//     });
 
 
 
@@ -212,3 +212,83 @@ fetch(url)
 
 
 
+
+
+
+
+
+
+
+
+
+    // Hide carousel if there are no projects
+$(document).ready(function() {
+  if ($('#projects-container').children().length = 0) {
+      $('#carousel-container').css('display', 'none');
+  }; 
+});
+// Projects JSON (Create array of objects for projects using Google Sheets API)
+const projURL = 'https://spreadsheets.google.com/feeds/list/1Z86cW-TqdqZK3v4tCn-q-lDeAIlSBadQpbfwSADg4cI/od6/public/values?alt=json';
+fetch(projURL)
+  .then(response => response.json())
+  .then(data => {
+      // console.log(`data:`, data)
+      console.log(data.feed.entry)
+      const projects = data.feed.entry.map(entry => {
+          return {
+              title: entry.gsx$title.$t,
+              image: entry.gsx$image.$t,
+              description: entry.gsx$description.$t,
+              code: entry.gsx$code.$t,
+              WebsiteURL: entry.gsx$websiteurl.$t,
+          }
+      })
+      createProjectElements(projects)
+  })
+// Function to look through projects array of objects and add projects to HTML
+const createProjectElements = (projects) => {    
+  for (i = 0; i < projects.length; i++) {
+      // Create one div per project
+      const $projElement = $('<div>').attr('class', 'project-element');
+      const $img = $('<img>').attr('src', projects[i].image);
+      $projElement.append($img);
+      // Create one card per project to place in same div
+      const $projCard = $('<div>').attr('class', 'project-card');
+      $projCard.append($('<h4>').text(projects[i].title));
+      $projCard.append($('<p>').text(projects[i].description));
+      const $projLink = $('<a>').attr('href', projects[i].code).attr('target', '_blank');
+      $projLink.text('Source Code');
+      $projCard.append($projLink);
+      const $projURL = $('<a>').attr('href', projects[i].WebsiteURL).attr('target', '_blank');
+      $projURL.text('Website URL');
+      $projCard.append($projURL)
+      $projElement.append($projCard);
+      $('#projects-container').append($projElement);
+  }
+  // Invoke carousel functionality
+  carouselGo();
+}
+// Previous & Next buttons for Carousel
+// Based on Corgi Carousel Tutorial for GA SEIR Avocado Toast
+function carouselGo() {
+  let indexCounter = 0;
+  let maxIndex = $('#projects-container').children().length - 1;
+  $('#next').on('click', () => {
+      $('#projects-container').children().eq(indexCounter).css('display','none');
+      if (indexCounter < maxIndex) {
+          indexCounter++;
+      } else { 
+          indexCounter = 0;
+      }
+      $('#projects-container').children().eq(indexCounter).css('display','block');
+  });
+  $('#previous').on('click', () => {
+      $('#projects-container').children().eq(indexCounter).css('display','none');
+      if (indexCounter > 0) {
+          indexCounter--;
+      } else {
+          indexCounter = maxIndex;
+      }
+      $('#projects-container').children().eq(indexCounter).css('display','block');
+  });
+};
