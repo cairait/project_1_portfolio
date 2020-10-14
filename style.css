@@ -172,11 +172,15 @@ h1.intro {
 
 }
 
-.resume > a {
-    font-family: Apple Chancery;
-    color: #DF6D26;
-    text-decoration: none;
-}
+/* .resume > a {
+    font-family: "Source Sans Pro",Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 23px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    
+} */
 
 .projects {
     background-color: white;
@@ -245,7 +249,7 @@ h1.projectstitle {
 
 .resume {
     text-align: center;
-    color: #FBB22D;
+    color: #FBB22D
     
 }
 
@@ -508,13 +512,14 @@ a.button4{
     border-radius:2em;
     box-sizing: border-box;
     text-decoration:none;
-    font-family:'Roboto',sans-serif;
+    font-family: "Source Sans Pro",Arial, Helvetica, sans-serif;
     font-weight:200;
     color:#FFFFFF;
     text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
     text-align:center;
     transition: all 0.2s;
     font-size: 40px;
+    background-color: #FBB22D;
 }
 
 a.button4:hover{
